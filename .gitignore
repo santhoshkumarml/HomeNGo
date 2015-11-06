@@ -17,3 +17,8 @@ hs_err_pid*
 .project
 .settings/
 target/
+
+#INTELLIJ
+.idea/
+*.iml
+
