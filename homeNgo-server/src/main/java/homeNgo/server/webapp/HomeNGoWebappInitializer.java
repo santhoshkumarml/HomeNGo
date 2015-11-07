@@ -24,7 +24,7 @@ public class HomeNGoWebappInitializer implements WebApplicationInitializer {
 		ctx.setServletContext(servletContext);
 
 		ServletRegistration.Dynamic dispatcher = servletContext.addServlet(
-				"dispatcher", new DispatcherServlet(ctx));
+				"HomeNGoServlet", new DispatcherServlet(ctx));
 		dispatcher.setLoadOnStartup(1);
 		dispatcher.addMapping("/");
 		LOGGER.log(Level.INFO, "HomeNGo WebApp Started");
